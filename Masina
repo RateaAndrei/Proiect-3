@@ -1,0 +1,52 @@
+public abstract class Masina implements  IMasina{
+
+   private String culoare;
+   private double pret ;
+   private int usi;
+
+    public Masina(String culoare, double pret,int usi){
+        this.culoare=culoare;
+        this.pret=pret;
+        this.usi=usi;
+    }
+    public  String getCuloare(){
+        return this.culoare;
+    }
+    public void setCuloare(String s){
+        culoare=s;
+    }
+
+    public double getPret(){
+        return this.pret;
+    }
+    public void setPret(double s){
+        this.pret=s;
+    }
+
+    public int getUsi(){
+        return this.usi;
+    }
+    public void setUsi(int s){
+        this.usi=s;
+    }
+
+
+    public String toString(){
+        StringBuffer s = new StringBuffer("model :");
+        s.append("//");
+        s.append("  culoare:  ");
+        s.append(culoare);
+        s.append("  nr usi: ");
+        s.append(usi);
+        s.append("  pret:  ");
+        s.append(pret);
+        return s.toString();
+    }
+
+
+
+
+
+
+
+}
