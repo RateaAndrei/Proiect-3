@@ -1,0 +1,11 @@
+public interface IMasina {
+
+    public void setCuloare();
+    public String getCuloare();
+    public void setPret();
+    public double getPret();
+    public void setUsi();
+    public int getUsi();
+
+
+}
